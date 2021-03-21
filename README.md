@@ -7,16 +7,16 @@ This is a compilation of my solutions to HackerRank problems solved in Java.
 ```
 $ git clone https://github.com/fordchastain/Hacker-Rank.git
 $ cd Hacker-Rank
+$ mvn install
 ```
 
 ## How to run
 
 ```
-$ javac HackerRank.java
-$ java HackerRank <problem name>
+$ mvn exec:java -Dexec.args="<problem name>"
 ```
 
-Below is the lists of problems with examples:
+Where `<problem name>` is the name of the problem from the list of problems below:
 
 ### simple-array-sum
 
