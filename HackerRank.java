@@ -67,6 +67,30 @@ public class HackerRank {
         }
         return result;
     }
+
+    /* https://www.hackerrank.com/challenges/grading/problem */
+    static int[] gradingStudents(int[] array) {
+        for (int i = 0; i < array.length; i++) {
+            if (array[i] < 38) continue;
+            int nextMultipleOf5 = 5 * (int)Math.ceil(array[i]/5.0);
+            if (nextMultipleOf5 - array[i] < 3) array[i] = nextMultipleOf5;
+        }
+        return array;
+    }
+
+    /* https://www.hackerrank.com/challenges/apple-and-orange/problem */
+    static void countApplesAndOranges(int s, int t, int a, int b, int[] apples, int[] oranges) {
+        int appleCount = 0, orangeCount = 0;
+        for (int i = 0; i < apples.length; i++){
+            if (apples[i] + a >= s && apples[i] + a <= t)
+                appleCount++;
+        }
+        for (int i = 0; i < oranges.length; i++) {
+            if (oranges[i] + b >= s && oranges[i] + b <= t)
+                orangeCount++;
+        }
+        System.out.println(appleCount + "\n" + orangeCount);
+    }
     
     public static void main (String[] args) {
         Scanner sc = new Scanner(System.in);
@@ -121,6 +145,26 @@ public class HackerRank {
         
             System.out.println(lisasWorkbook(arr, chapters));
         }
+
+        if (args[0].equals("grading")) {
+            int n = sc.nextInt();
+            int[] array = new int[n];
+            for (int i = 0; i < n; i++)
+                array[i] = sc.nextInt();
+            for (int i : gradingStudents(array))
+                System.out.println(i);
+        }
+
+        if (args[0].equals("apple-and-orange")) {
+            int s = sc.nextInt(), t = sc.nextInt(), a = sc.nextInt(), b = sc.nextInt(), m = sc.nextInt(), n = sc.nextInt();
+            int[] apples = new int[m], oranges = new int[n];
+            for (int i = 0; i < m; i++)
+                apples[i] = sc.nextInt();
+            for (int i = 0; i < n; i++)
+                oranges[i] = sc.nextInt();
+            countApplesAndOranges(s, t, a, b, apples, oranges);
+        }
+
     }
     
 }

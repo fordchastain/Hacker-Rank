@@ -96,3 +96,45 @@ $ 4 2 6 1 10
 ```
 $ 4
 ```
+
+### grading
+
+Check out the problem description **[here](https://www.hackerrank.com/challenges/grading/problem)**.
+
+**Input example:**
+```
+$ java HackerRank grading
+$ 4
+$ 73
+$ 67
+$ 38
+$ 33
+```
+
+**Output example:**
+```
+$ 75
+$ 67
+$ 40
+$ 33
+```
+
+### apple-and-orange
+
+Check out the problem description **[here](https://www.hackerrank.com/challenges/apple-and-orange/problem)**.
+
+**Input example:**
+```
+$ java HackerRank apple-and-orange
+$ 7 11
+$ 5 15
+$ 3 2
+$ -2 2 1
+$ 5 -6
+```
+
+**Output example:**
+```
+$ 1
+$ 1
+```
