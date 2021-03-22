@@ -1,4 +1,4 @@
-# Hacker Rank
+# Hacker Rank ![](https://www.travis-ci.com/fordchastain/Hacker-Rank.svg?branch=main)
 
 This is a compilation of my solutions to HackerRank problems solved in Java.
 
