@@ -1,4 +1,7 @@
-# Hacker Rank ![](https://www.travis-ci.com/fordchastain/Hacker-Rank.svg?branch=main)
+# Hacker Rank 
+
+[![Build Status](https://www.travis-ci.com/fordchastain/Hacker-Rank.svg?branch=main)](https://www.travis-ci.com/fordchastain/Hacker-Rank/)
+[![codecov](https://codecov.io/gh/fordchastain/Hacker-Rank/branch/main/graphs/badge.svg)](https://codecov.io/gh/fordchastain/Hacker-Rank/)
 
 This is a compilation of my solutions to HackerRank problems solved in Java.
 
@@ -16,7 +19,7 @@ $ mvn install
 $ mvn exec:java -Dexec.args="<problem name>"
 ```
 
-Where `<problem name>` is the name of the problem from the list of problems below:
+where `<problem name>` is the name of the problem from the list of problems below:
 
 ### simple-array-sum
 
@@ -24,7 +27,7 @@ Check out the problem description **[here](https://www.hackerrank.com/challenges
 
 **Input example:**
 ```
-$ java HackerRank simple-array-sum
+$ mvn exec:java -Dexec.args="simple-array-sum"
 $ 6
 $ 1 2 3 4 10 11
 ```
@@ -40,7 +43,7 @@ Check out the problem description **[here](https://www.hackerrank.com/challenges
 
 **Input example:**
 ```
-$ java HackerRank compare-the-triplets
+$ mvn exec:java -Dexec.args="compare-the-triplets"
 $ 17 28 30
 $ 99 16 8
 ```
@@ -56,7 +59,7 @@ Check out the problem description **[here](https://www.hackerrank.com/challenges
 
 **Input example:**
 ```
-$ java HackerRank birthday-cake-candles
+$ mvn exec:java -Dexec.args="birthday-cake-candles"
 $ 4
 $ 3 2 1 3
 ```
@@ -72,7 +75,7 @@ Check out the problem description **[here](https://www.hackerrank.com/challenges
 
 **Input example:**
 ```
-$ java HackerRank time-conversion
+$ mvn exec:java -Dexec.args="time-conversion"
 $ 07:05:45PM
 ```
 
@@ -87,7 +90,7 @@ Check out the problem description **[here](https://www.hackerrank.com/challenges
 
 **Input example:**
 ```
-$ java HackerRank lisa-workbook
+$ mvn exec:java -Dexec.args="lisa-workbook"
 $ 5 3
 $ 4 2 6 1 10
 ```
@@ -103,7 +106,7 @@ Check out the problem description **[here](https://www.hackerrank.com/challenges
 
 **Input example:**
 ```
-$ java HackerRank grading
+$ mvn exec:java -Dexec.args="grading"
 $ 4
 $ 73
 $ 67
@@ -125,7 +128,7 @@ Check out the problem description **[here](https://www.hackerrank.com/challenges
 
 **Input example:**
 ```
-$ java HackerRank apple-and-orange
+$ mvn exec:java -Dexec.args="apple-and-orange"
 $ 7 11
 $ 5 15
 $ 3 2

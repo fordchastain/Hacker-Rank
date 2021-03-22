@@ -79,7 +79,7 @@ public class HackerRank {
     }
 
     /* https://www.hackerrank.com/challenges/apple-and-orange/problem */
-    static void countApplesAndOranges(int s, int t, int a, int b, int[] apples, int[] oranges) {
+    static int[] countApplesAndOranges(int s, int t, int a, int b, int[] apples, int[] oranges) {
         int appleCount = 0, orangeCount = 0;
         for (int i = 0; i < apples.length; i++){
             if (apples[i] + a >= s && apples[i] + a <= t)
@@ -89,7 +89,7 @@ public class HackerRank {
             if (oranges[i] + b >= s && oranges[i] + b <= t)
                 orangeCount++;
         }
-        System.out.println(appleCount + "\n" + orangeCount);
+        return new int[]{appleCount, orangeCount};
     }
     
     public static void main (String[] args) {
@@ -162,7 +162,8 @@ public class HackerRank {
                 apples[i] = sc.nextInt();
             for (int i = 0; i < n; i++)
                 oranges[i] = sc.nextInt();
-            countApplesAndOranges(s, t, a, b, apples, oranges);
+            for (int i : countApplesAndOranges(s, t, a, b, apples, oranges))
+                System.out.println(i);
         }
 
     }
