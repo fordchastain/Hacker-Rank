@@ -102,4 +102,20 @@ public final class HackerRank {
         return Math.abs(primaryDiagonal - secondaryDiagonal);
     }
 
+    /* https://www.hackerrank.com/challenges/climbing-the-leaderboard/problem */
+    static int[] climbingTheLeaderboard(int[] ranked, int[] player) {
+        TreeMap<Integer, Integer> map = new TreeMap<Integer, Integer>();
+        int rank = 1;
+        for (int i : ranked)
+            if (!map.containsKey(i)) map.put(i, rank++);
+            
+        int[] result = new int[player.length];
+        for (int i = 0; i < player.length; i++) {
+            Integer key = map.put(player[i], null);
+            result[i] = (map.higherEntry(player[i]) == null ? 1 : map.higherEntry(player[i]).getValue()+1);
+            map.remove(player[i]);
+        }
+        return result;
+    }
+
 }

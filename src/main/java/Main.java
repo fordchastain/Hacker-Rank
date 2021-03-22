@@ -85,5 +85,19 @@ public class Main {
                     arr[i][j] = sc.nextInt();
             System.out.println(HackerRank.diagonalDifference(arr));
         }
+
+        if (args[0].equals("climb-the-leaderboard")) {
+            int n = sc.nextInt();
+            int[] ranked = new int[n];
+            for (int i = 0; i < n; i++)
+                ranked[i] = sc.nextInt();
+            int m = sc.nextInt();
+            int[] player = new int[m];
+            for (int i = 0; i < m; i++) 
+                player[i] = sc.nextInt();
+     
+            for (int i : HackerRank.climbingTheLeaderboard(ranked, player))
+                System.out.println(i);
+        }
     }
 }

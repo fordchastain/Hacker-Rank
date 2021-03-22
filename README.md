@@ -159,3 +159,23 @@ $ 10 8 -12
 ```
 $ 15
 ```
+
+### climbing-the-leaderboard
+
+Check out the problem description **[here](https://www.hackerrank.com/challenges/climbing-the-leaderboard/problem)**.
+
+**Input example:**
+```
+$ mvn exec:java -Dexec.args="climbing-the-leaderboard"
+$ 4
+$ 100 90 90 80
+$ 3
+$ 70 80 105
+```
+
+**Output example:**
+```
+$ 4
+$ 3
+$ 1
+```
