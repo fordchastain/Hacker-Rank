@@ -75,6 +75,15 @@ public class Main {
             for (int i : HackerRank.countApplesAndOranges(s, t, a, b, apples, oranges))
                 System.out.println(i);
         }
-        
+
+
+        if (args[0].equals("diagonal-difference")) {
+            int n = sc.nextInt();
+            int[][] arr = new int[n][n];
+            for (int i = 0; i < n; i++)
+                for (int j = 0; j < n; j++)
+                    arr[i][j] = sc.nextInt();
+            System.out.println(HackerRank.diagonalDifference(arr));
+        }
     }
 }

@@ -141,3 +141,21 @@ $ 5 -6
 $ 1
 $ 1
 ```
+
+### diagonal-difference
+
+Check out the problem description **[here](https://www.hackerrank.com/challenges/diagonal-difference/problem)**.
+
+**Input example:**
+```
+$ mvn exec:java -Dexec.args="diagonal-difference"
+$ 3
+$ 11 2 4
+$ 4 5 6
+$ 10 8 -12
+```
+
+**Output example:**
+```
+$ 15
+```

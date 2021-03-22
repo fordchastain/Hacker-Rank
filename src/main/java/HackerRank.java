@@ -1,6 +1,6 @@
 import java.util.*;
 
-public class HackerRank {
+public final class HackerRank {
     
     /* https://www.hackerrank.com/challenges/simple-array-sum/problem */
     static int simpleArraySum(int[] arr) {
@@ -91,5 +91,15 @@ public class HackerRank {
         }
         return new int[]{appleCount, orangeCount};
     }
-    
+
+    /* https://www.hackerrank.com/challenges/diagonal-difference/problem */
+    static int diagonalDifference(int[][] arr) {
+        int primaryDiagonal = 0, secondaryDiagonal = 0;
+        for (int i = 0; i < arr.length; i++)
+            primaryDiagonal += arr[i][i];
+        for (int i = 0, j = arr.length-1; i < arr.length; i++, j--)
+            secondaryDiagonal += arr[i][j];
+        return Math.abs(primaryDiagonal - secondaryDiagonal);
+    }
+
 }
