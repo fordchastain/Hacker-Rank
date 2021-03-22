@@ -30,13 +30,18 @@
           </execution>
         </executions>
         <configuration>
-          <mainClass>HackerRank</mainClass>
+          <mainClass>Main</mainClass>
         </configuration>
       </plugin>
       <plugin>
         <groupId>org.jacoco</groupId>
         <artifactId>jacoco-maven-plugin</artifactId>
         <version>0.8.6</version>
+        <configuration>
+          <excludes>
+            <exclude>Main.class</exclude>
+          </excludes>
+        </configuration>
         <executions>
           <execution>
             <goals>
