@@ -99,5 +99,26 @@ public class Main {
             for (int i : HackerRank.climbingTheLeaderboard(ranked, player))
                 System.out.println(i);
         }
+
+        if (args[0].equals("the-hurdle-race")) {
+            int n = sc.nextInt(), k = sc.nextInt();
+            int[] height = new int[n];
+            for (int i = 0; i < n; i++)
+                height[i] = sc.nextInt();
+            System.out.println(HackerRank.hurdleRace(k, height));
+        }
+
+        if (args[0].equals("organizing-containers-of-balls")) {
+            int q = sc.nextInt();
+            for (int i = 0; i < q; i++) {
+                int n = sc.nextInt();
+                int[][] m = new int[n][n];
+                for (int j = 0; j < n; j++)
+                    for (int k = 0; k < n; k++)
+                        m[j][k] = sc.nextInt();
+                System.out.println(HackerRank.organizingContainers(m));
+            }
+        }
+
     }
 }

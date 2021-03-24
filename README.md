@@ -179,3 +179,48 @@ $ 4
 $ 3
 $ 1
 ```
+
+### the-hurdle-race
+
+Check out the problem description **[here](https://www.hackerrank.com/challenges/the-hurdle-race/problem)**.
+
+**Input example:**
+```
+$ mvn exec:java -Dexec.args="the-hurdle-race"
+$ 5 4
+$ 1 6 3 5 2
+```
+
+**Output example:**
+```
+$ 2
+```
+
+**Output example:**
+```
+$ 4
+$ 3
+$ 1
+```
+
+### organizing-containers-of-balls
+
+Check out the problem description **[here](https://www.hackerrank.com/challenges/organizing-containers-of-balls/problem)**.
+
+**Input example:**
+```
+$ mvn exec:java -Dexec.args="the-hurdle-race"
+$ 2
+$ 2
+$ 1 1
+$ 1 1
+$ 2
+$ 0 2
+$ 1 1
+```
+
+**Output example:**
+```
+$ Possible
+$ Impossible
+```

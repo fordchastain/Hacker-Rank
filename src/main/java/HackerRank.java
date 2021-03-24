@@ -118,4 +118,27 @@ public final class HackerRank {
         return result;
     }
 
+    /* https://www.hackerrank.com/challenges/the-hurdle-race/problem */
+    static int hurdleRace(int k, int[] height) {
+        int highest = 0;
+        for (int i : height)
+            if (i > highest) highest = i;
+        return (highest > k ? highest - k : 0);
+    }
+
+    /* https://www.hackerrank.com/challenges/organizing-containers-of-balls/problem */
+    static String organizingContainers(int[][] container) {
+        List<Integer> rowSums = new ArrayList<Integer>(), colSums = new ArrayList<Integer>();
+        for (int i = 0; i < container.length; i++) {
+            int rowSum = 0, colSum = 0;
+            for (int j = 0; j < container.length; j++) {
+                rowSum += container[i][j];
+                colSum += container[j][i];
+            }
+            rowSums.add(rowSum);
+            colSums.add(colSum);
+        }
+        return (rowSums.containsAll(colSums) ? "Possible" : "Impossible");
+    }
+
 }
