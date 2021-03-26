@@ -141,4 +141,16 @@ public final class HackerRank {
         return (rowSums.containsAll(colSums) ? "Possible" : "Impossible");
     }
 
+    /* https://www.hackerrank.com/challenges/plus-minus/problem */
+    static double[] plusMinus(int[] arr) {
+        double n = arr.length;
+        int pos = 0, neg = 0, zero = 0;
+        for (int i = 0; i < n; i++) {
+            if (arr[i] > 0) pos++;
+            if (arr[i] < 0) neg++;
+            if (arr[i] == 0) zero++;
+        }
+        return new double[]{pos/n, neg/n, zero/n}; 
+    }
+
 }
